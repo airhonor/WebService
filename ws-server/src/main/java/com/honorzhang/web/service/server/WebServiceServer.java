@@ -1,4 +1,4 @@
-package com.honorzhang.web.service.example;
+package com.honorzhang.web.service.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,10 +9,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  */
 @SpringBootApplication
 @EnableScheduling
-public class WebServiceExample {
+public class WebServiceServer {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebServiceExample.class, args);
+        SpringApplication.run(WebServiceServer.class, args);
     }
 
 }
