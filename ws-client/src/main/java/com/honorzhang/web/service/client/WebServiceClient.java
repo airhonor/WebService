@@ -8,7 +8,6 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * @author honorzhang
  */
 @SpringBootApplication
-@EnableScheduling
 public class WebServiceClient {
 
     public static void main(String[] args) {
