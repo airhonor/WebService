@@ -1,7 +1,6 @@
 package com.honorzhang.web.service.client.service.impl;
 
 import com.honorzhang.web.service.client.service.ClientService;
-import com.honorzhang.web.service.client.ws.InsertPeopleResponse;
 import com.honorzhang.web.service.client.ws.People;
 import com.honorzhang.web.service.client.ws.PeopleService;
 import com.honorzhang.web.service.client.ws.PeopleServiceImpl;

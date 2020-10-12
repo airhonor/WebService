@@ -5,8 +5,6 @@ import com.honorzhang.web.service.server.model.People;
 import com.honorzhang.web.service.server.service.PeopleService;
 import com.honorzhang.web.service.server.utils.SpringUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.jws.WebService;
@@ -18,14 +16,13 @@ import javax.jws.WebService;
  **/
 @WebService(endpointInterface = "com.honorzhang.web.service.server.service.PeopleService",
         targetNamespace = "http://service.people.com/wsdl", serviceName = "PeopleServiceImpl", portName = "dao")
-@Service
 @Slf4j
 public class PeopleServiceImpl implements PeopleService {
 
 
     @Override
     public People insertPeople(People people) {
-        PeopleMapper peopleMapper = (PeopleMapper) SpringUtil.getBean(PeopleMapper.class);
+        PeopleMapper peopleMapper = SpringUtil.getBean(PeopleMapper.class);
         try {
             boolean flag = peopleMapper.insert(people) > 0;
             if (flag) {
